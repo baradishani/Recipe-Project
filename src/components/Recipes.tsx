@@ -33,9 +33,7 @@ const Recipes = ({ recipe }: RecipeProps) => {
                         </View>
                     </View>
                     <View style={styles.ratingContainer}>
-                        <Text style={styles.ratingText}>
-                            Rating: {recipe.rating} stars
-                        </Text>
+                        <Text style={styles.ratingText}>{recipe.rating} </Text>
                     </View>
                 </View>
             </View>
@@ -99,12 +97,17 @@ const styles = StyleSheet.create({
     ratingContainer: {
         flexDirection: 'row',
         alignItems: 'center',
+        justifyContent: 'center',
         marginTop: 5,
+        backgroundColor: '#26948b',
+        height: 30,
+        width: 40,
+        borderRadius: 8
     },
     ratingText: {
         fontSize: 14,
         marginLeft: 5,
-        color: '#666',
+        color: '#ffffff',
     },
 });
 
